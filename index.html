@@ -16,11 +16,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <a href="" class="">본문으로 바로가기</a>
         <style>
-
+            .accessibility{overflow:hidden; position:absolute; top:0; left:0; z-index:3000; width:100%;}
+            .accessibility a{display:block; overflow:hidden; z-index:3000; width:1px; height:1px; margin:0 -1px -1px 0; font-size:0; text-align:center; line-height:0;}
+            #accessibility a:active,#accessibility a:hover,.accessibility a:focus{width:auto; height:30px; margin:0; padding:8px 0; background-color:#333; color:#fff; font-size:14px; line-height:16px;}
         </style>
         <header id="header">
+            <div class="accessibility">
+                <a href="#contents">본문 바로가기</a>
+            </div>
             <!--
                 Home
                 Movies
@@ -53,14 +57,14 @@
             </div>
         </header>
         <main>
-            <div class="rowgroup1 scroll_content">
+            <div class="rowgroup1 scroll_content" id="contents">
                 <!-- 상영작 -->
                 <!-- card배치 => 4 -->
                 <div class="wrap">
                     <h2 class="rowTitle">Movies</h2>
                     <div class="movieList clearfix">
                         <div class="movieItem">
-                            <div class="movieContent">
+                            <div class="movieContent" tabindex="0">
                                 <img src="https://img.megabox.co.kr/SharedImg/2024/05/09/Xm6jl0VUatoh6HRLXoFu0Z3qoSqgmL2q_420.jpg" alt="image1">
                                 <div class="blackBg">
                                     <div class="blackBgInner">
@@ -90,7 +94,7 @@
                             </div>
                         </div>
                         <div class="movieItem">
-                            <div class="movieContent">
+                            <div class="movieContent" tabindex="0">
                                 <img src="https://img.megabox.co.kr/SharedImg/2024/05/08/H37kHilCTcfswL6u9WasZOF9HmfJBjJZ_420.jpg" alt="image2">
                                 <div class="blackBg">
                                     <div class="blackBgInner">
@@ -114,7 +118,7 @@
                             </div>
                         </div>
                         <div class="movieItem">
-                            <div class="movieContent">
+                            <div class="movieContent" tabindex="0">
                                 <img src="https://img.megabox.co.kr/SharedImg/2024/05/10/HSbOY1glp6Etpi6LtbyGSI0lGYviuXup_420.jpg" alt="image3">
                                 <div class="blackBg">
                                     <div class="blackBgInner">
@@ -133,7 +137,7 @@
                             </div>
                         </div>
                         <div class="movieItem">
-                            <div class="movieContent">
+                            <div class="movieContent" tabindex="0">
                                 <img src="https://img.megabox.co.kr/SharedImg/2024/05/21/DguPVnU5VvF2XOutaeu7Tw7g5qZRBIO7_420.jpg" alt="">
                                 <div class="blackBg">
                                     <div class="blackBgInner">
