@@ -47,7 +47,7 @@ header .wrap{display:flex;}
 .movieList{padding:0 20px 42px 17px;}
 .movieList .movieItem{display:inline-block;float:left;position:relative;width:248px;height:353px;}
 .movieList .movieItem > div{display:block;width:100%;height:100%;}
-.blackBg{opacity:0;visibility:hidden;position:absolute;top:0;left:0;width:100%;height:calc(100% - 0px);padding-top:2rem;padding-left:1rem;border-radius:12px;background-color:rgba(0,0,0,0.8);color:#ffffff;transition:opacity 300ms ease-in .2s, visibility 300ms ease-in .3s;text-align:center;}
+.blackBg{opacity:0;visibility:hidden;display: flex;flex-direction: column;align-items: center;justify-content: center;position:absolute;top:0;left:0;width:100%;height:calc(100% - 0px);/* padding-top:2rem; */padding-left:1rem;border-radius:12px;background-color:rgba(0,0,0,0.8);color:#ffffff;transition:opacity 300ms ease-in .2s, visibility 300ms ease-in .3s;text-align:center;}
 .movieList .movieItem > div:hover .blackBg{opacity:1;visibility:visible;}
 .blackBg .blackBgInner{overflow:hidden;height:auto;display:-webkit-box;-webkit-line-clamp:10;-webkit-box-orient:vertical;display:box;line-clamp:10;box-orient:vertical;text-align:left;font-size:14px;}
 .blackBg .more{display:inline-block;margin-top:15px;padding:6px;border:1px solid #ffffff;border-radius:5px;font-size:15px;color:#ffffff;}
