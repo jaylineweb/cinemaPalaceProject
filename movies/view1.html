@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>상세 페이지</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrap clearfix">
+            <h1 class="logo">
+                <a href="../index.html"><img src="../main/img/logo.png" alt="CINEMA PALACE 로고 이미지"></a>
+            </h1>
+            <button class="mobile_btn">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
+            <div class="gnb_wrap">
+                <div class="gnb">
+                    <ul class="clearfix">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../movies/view1.html">Movies</a></li>
+                        <li><a href="../Theater/index.html">Theaters</a></li>
+                        <li><a href="../event/index.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="buttonArea">
+                    <a href="../login/login.html">Login</a>
+                    <a href="../login/signup.html">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap -->
+    </header>
+    <!-- //header -->
+    <div class="view_container">
+        <div class="sect-base-movie">
+            <div class="box-image">
+                <a href="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88266/88266_1000.jpg" title="포스터 크게 보기 새창" target="_blank">
+                    <span class="thumb-image">
+                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88266/88266_320.jpg" alt="원더랜드 포스터 새창" onerror="errorImage(this)">
+                        <i class="cgvIcon etc age12">12</i>
+                    </span>
+                </a>
+            </div>
+            <div class="box-contents">
+                <div class="title">
+                    <strong>원더랜드</strong>
+                    <em class="round lightblue"><span>현재상영중</span></em>
+                    <p>WONDERLAND</p>
+                </div>  
+                <div class="score">
+                    <strong class="percent">예매율&nbsp;<span>16.9%</span></strong>
+                    <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 -->
+                    <div class="egg-gage small">
+                        <span class="egg good"></span>
+                        <span class="percent">81%</span>
+                    </div>
+                </div>
+                <!-- 떨어지는 얘 이전 요소에 class=on을 넣는다 -->
+                <div class="spec">
+                    <dl>
+                        <dt>감독 :&nbsp;</dt>
+                        <dd>
+    
+    
+                            <a href="/movies/persons/?pidx=2248">김태용</a>
+    
+                        </dd>
+                        <dt>&nbsp;/ 프로듀서 :&nbsp;</dt>
+                        <dd>
+    
+    
+                            이승복
+    
+                        </dd>
+    
+                        <dt>&nbsp;/ 배우 :&nbsp;</dt>
+                        <dd class="on">
+    
+    
+                            <a href="/movies/persons/?pidx=106634">탕웨이</a>
+    
+                            ,&nbsp;
+                            <a href="/movies/persons/?pidx=113556">배수지</a>
+    
+                            ,&nbsp;
+                            <a href="/movies/persons/?pidx=114952">박보검</a>
+    
+                            ,&nbsp;
+                            <a href="/movies/persons/?pidx=38838">정유미</a>
+    
+                            ,&nbsp;
+                            <a href="/movies/persons/?pidx=114273">최우식</a>
+    
+                        </dd>
+    
+                        <dt>장르 :&nbsp;드라마</dt>
+                        <dd></dd>
+                        <dt>&nbsp;/ 기본 정보 :&nbsp;</dt>
+                        <!-- 2023.04.27 영화상세 등급 표기 수정-->
+                        <!--<dd class="on">12,&nbsp;113분,&nbsp;한국</dd>-->
+                        <dd class="on">12세이상관람가,&nbsp;113분,&nbsp;한국</dd>
+                        <dt>개봉 :&nbsp;</dt>
+                        <dd class="on">2024.06.05</dd>
+    
+    
+    
+    
+                    </dl>
+                </div>
+                <span class="screentype">
+                </span>
+                <span class="like">
+                </span>
+    
+            </div>
+        </div>
+        <div class="cols-content" id="menu">
+            <div class="col-detail">
+    
+                <ul class="tab-menu">
+                    <li class="on"><a title="현재 선택됨" href="/movies/detail-view/?midx=88266#menu">주요정보 </a></li>
+    
+    
+    
+    
+                </ul>
+                <div class="sect-story-movie">
+                    <p><strong>언제 어디서든 다시 만날 수 있습니다</strong><br>
+                        <br>
+                        죽은 사람을 인공지능으로 복원하는<br>
+                        ‘원더랜드’ 서비스가 일상이 된 세상,<br>
+                        어린 딸에게 자신의 죽음을 숨기기 위해<br>
+                        ‘원더랜드’ 서비스를 의뢰한 ‘바이리’와<br>
+                        사고로 누워있는 남자친구 ‘태주’를 ‘원더랜드’에서<br>
+                        우주인으로 복원해 행복한 일상을 나누는 ‘정인’.<br>
+                        사람들은 더 이상<br>
+                        그리워하거나 슬퍼하지 않는 삶을 선택할 수 있게 된다.<br>
+                        <br>
+                        ‘원더랜드’의 수석 플래너 ‘해리’와 신입 플래너 ‘현수’는<br>
+                        ‘원더랜드’를 찾는 사람들이 소중한 기억을<br>
+                        이어갈 수 있도록 바쁜 하루하루를 보낸다.<br>
+                        어린 시절부터 인공지능 부모님과 교감해온 ‘해리’는<br>
+                        이용자들의 상황을 더욱 세심히 살피고,<br>
+                        ‘현수’는 의뢰받은 서비스에서<br>
+                        뜻밖의 비밀을 발견하게 되어 마음이 쓰인다.<br>
+                        <br>
+                        어느 날 의식불명 상태의 ‘태주’가<br>
+                        기적처럼 깨어나 ‘정인’ 곁으로 돌아오고<br>
+                        다시 마주하게 된 모든 것이 낯설고<br>
+                        혼란스러운 ‘태주’와<br>
+                        그런 그와 함께하는 현실에<br>
+                        ‘정인’의 마음에는 조금씩 균열이 찾아온다.<br>
+                        <br>
+                        한편, ‘원더랜드’에서 발굴 현장을 누비는<br>
+                        고고학자로 복원된 ‘바이리’는<br>
+                        딸과의 영상통화를 통해<br>
+                        친구 같은 엄마가 되기 위해 노력하지만<br>
+                        갑작스럽게 서비스가 종료되면서<br>
+                        예상치 못한 오류가 발생하는데…
+                    </p>
+                </div>
+    
+    
+                <div class="sect-movielist" style="display :none">
+                    <h3><img src="https://img.cgv.co.kr/R2014/images/title/h3_relation_movie.gif" alt="RELATION MOVIE"></h3>
+                    <ul>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88339">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88339/88339_126.jpg"
+                                            alt="대치동 스캔들 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age15">15</i>
+                                        <!-- <span class="ico-grade 15">15</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88339"><strong>대치동 스캔들</strong></a>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88338">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88338/88338_126.jpg"
+                                            alt="정직한 사람들 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age12">12</i>
+                                        <!-- <span class="ico-grade 12">12</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88338"><strong>정직한 사람들</strong></a>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88336">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88336/88336_126.jpg"
+                                            alt="캣퍼슨 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age15">15</i>
+                                        <!-- <span class="ico-grade 15">15</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88336"><strong>캣퍼슨</strong></a>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88334">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88334/88334_126.jpg"
+                                            alt="보통의 우주는 찬란함을 꿈꾸는가 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age15">15</i>
+                                        <!-- <span class="ico-grade 15">15</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88334"><strong>보통의 우주는 찬란함을 꿈꾸는가</strong></a>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88299">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88299/88299_126.jpg"
+                                            alt="프리실라 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age15">15</i>
+                                        <!-- <span class="ico-grade 15">15</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88299"><strong>프리실라</strong></a>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="box-image">
+                                <a href="/movies/detail-view/?midx=88298">
+                                    <span class="thumb-image">
+                                        <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88298/88298_126.jpg"
+                                            alt="양치기 포스터">
+                                        <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                        <i class="cgvIcon etc age15">15</i>
+                                        <!-- <span class="ico-grade 15">15</span> -->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="box-contents">
+                                <a href="/movies/detail-view/?midx=88298"><strong>양치기</strong></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- .sect-movielist -->
+            </div><!-- .col-detail -->
+        </div>
+
+        <section class="reviews">
+            <h2>리뷰</h2>
+            <div class="review-list" id="review-list">
+                <!-- Review items will be injected here by JavaScript -->
+            </div>
+            <div class="review-form">
+                <h3>리뷰 남기기</h3>
+                <form id="review-form">
+                    <input type="text" id="reviewer-name" placeholder="Your name" required>
+                    <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="copyright">©CINEMA PALACE All rights reserved</div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nowShowingContainer = document.getElementById('now-showing');
+            const comingSoonContainer = document.getElementById('coming-soon');
+            const reviewListContainer = document.getElementById('review-list');
+            const reviewForm = document.getElementById('review-form');
+
+            const nowShowingMovies = [
+                {
+                    title: "명탐정 코난 VS 괴도 키드",
+                    releaseDate: "2024.06.05",
+                    // imageUrl: "https://via.placeholder.com/150x225"
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88272/88272_320.jpg"
+                },
+                {
+                    title: "원더랜드",
+                    releaseDate: "2024-06-05",
+                    // imageUrl: "https://via.placeholder.com/150x225"
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88266/88266_320.jpg"
+                },
+                {
+                    title: "존 오브 인터레스트",
+                    releaseDate: "2024.06.05",
+                    // imageUrl: "https://via.placeholder.com/150x225"
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88270/88270_320.jpg"
+                },
+                {
+                    title: "다섯 번째 방",
+                    releaseDate: "2024.06.05",
+                    // imageUrl: "https://via.placeholder.com/150x225"
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88284/88284_320.jpg"
+                }
+            ];
+
+            const comingSoonMovies = [
+                {
+                    title: "원더랜드",
+                    releaseDate: "2024-07-01",
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88266/88266_320.jpg"
+                },
+                {
+                    title: "극장판 하이큐!! 쓰레기장의 결전",
+                    releaseDate: "2024-07-05",
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88214/88214_320.jpg"
+                },
+                {
+                    title: "퓨리오사-매드맥스 사가",
+                    releaseDate: "2024-07-10",
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88148/88148_320.jpg"
+                },
+                {
+                    title: "명탐정 코난 VS 괴도 키드",
+                    releaseDate: "2024-07-15",
+                    imageUrl: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88272/88272_320.jpg"
+                }
+            ];
+
+            const reviews = [
+                {
+                    reviewer: "John Doe",
+                    text: "Great movie, highly recommended!"
+                },
+                {
+                    reviewer: "Jane Smith",
+                    text: "Not bad, but could be better."
+                }
+            ];
+
+            function displayMovies(container, movies) {
+                movies.forEach(movie => {
+                    const movieItem = document.createElement('div');
+                    movieItem.classList.add('movie-item');
+                    movieItem.innerHTML = `
+                    <img src="${movie.imageUrl}" alt="${movie.title}">
+                    <h3>${movie.title}</h3>
+                    <p>Release Date: ${movie.releaseDate}</p>
+                    <div class="desc_box"><a href="#n" class="detail_view">상세 보기</a></div>
+                `;
+                    container.appendChild(movieItem);
+                });
+            }
+
+            function displayReviews(container, reviews) {
+                container.innerHTML = '';
+                reviews.forEach(review => {
+                    const reviewItem = document.createElement('div');
+                    reviewItem.classList.add('review-item');
+                    reviewItem.innerHTML = `
+                    <h4>${review.reviewer}</h4>
+                    <p>${review.text}</p>
+                `;
+                    container.appendChild(reviewItem);
+                });
+            }
+
+            reviewForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const reviewerName = document.getElementById('reviewer-name').value;
+                const reviewText = document.getElementById('review-text').value;
+
+                if (reviewerName && reviewText) {
+                    reviews.push({
+                        reviewer: reviewerName,
+                        text: reviewText
+                    });
+                    displayReviews(reviewListContainer, reviews);
+                    reviewForm.reset();
+                }
+            });
+
+            displayMovies(nowShowingContainer, nowShowingMovies);
+            displayMovies(comingSoonContainer, comingSoonMovies);
+            displayReviews(reviewListContainer, reviews);
+        });
+        
+    </script>
+</body>
+
+</html>

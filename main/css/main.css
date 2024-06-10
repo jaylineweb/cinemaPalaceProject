@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+@import url('./style.css'); /*기본 스타일 정의*/
+@import url('./main_layout.css'); /*메인 페이지 레이아웃*/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./login.css" rel="stylesheet">
+    <title>회원가입 페이지</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</head>
+<body>
+    <div class="loginBox">
+        <a class="backButton" href="#n" onclick="history.go(-1);">
+            <i class="fa-solid fa-left-long fa-2x"></i>
+        </a>
+        <div class="singUp">
+            <img src="../main/img/logo.png" alt="" style="background:#000;outline:1px solid;">
+        </div>
+        <!-- 이름 기입창 -->
+        <div class="nameCheck">
+            <div class="inputGroup">
+                <label for="lastName">성</label>
+                <input type="text" id="lastName" />
+            </div>
+            <div class="inputGroup">
+                <label for="firstName">이름</label>
+                <input type="text" id="firstName" />
+            </div>
+        </div>
+
+        <!-- 이메일, 비밀번호 -->
+        <div class="checkBox">
+            <label for="email">이메일</label>
+            <input type="email" id="email" required />
+            <span id="emailError" class="error">유효한 이메일 주소를 입력하세요.</span>
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" minlength="8" required />
+            <span id="passwordError" class="error">비밀번호는 최소 8자 이상이어야 합니다.</span>
+
+            <label for="passwordCheck">비밀번호 확인</label>
+            <input type="password" id="passwordCheck" required />
+            <span id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</span>
+        </div>
+
+        <div class="validateBtn">
+            <button onclick="validateForm()">이메일 인증하기</button>
+        </div>
+
+    </div>
+
+    <script>
+        function showAlert() {
+            alert('인증에 성공했습니다.')
+        }
+
+
+        function validateForm() {
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const passwordCheck = document.getElementById('passwordCheck');
+
+            let valid = true;
+
+            // 이메일 유효성 검사
+            if (!email.checkValidity()) {
+                document.getElementById('emailError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            // 비밀번호 유효성 검사
+            if (!password.checkValidity()) {
+                document.getElementById('passwordError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            // 비밀번호 확인 검사
+            if (password.value !== passwordCheck.value) {
+                document.getElementById('passwordCheckError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordCheckError').style.display = 'none';
+            }
+
+            if (valid) {
+                alert('인증 완료 되었습니다.');
+                window.location.href = '../index.html';
+                // 여기서 폼 제출 로직을 추가할 수 있습니다.
+            }
+        }
+    </script>
+</body>
+
+</html>

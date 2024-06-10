@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../login/login.css" rel="stylesheet">
+    <title>시작 페이지</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</head>
+<body>
+    <div class="startPageBox" >
+        <div class="slider">
+            <div class="slides">
+                <img src="image/image1.jpg" alt="Image 1">
+                <img src="image/image4.jpg" alt="Image 2">
+                <img src="image/image2.jpg" alt="Image 3">
+            </div>
+        </div>
+        <h1>영화 정보 사이트</h1>
+        <p>최신영화 정보와 예매를 함께</p>
+        <button class="joinButton" onclick="redirectToMain()">입장하기</button>
+    </div>
+
+    <script>
+        function redirectToMain() {
+            window.location.href = '../index.html'; // 바깥 폴더에 있는 index.html로 이동
+        }
+
+            // 이미지 슬라이드 
+    let currentIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 5000); // 3초마다 슬라이드 변경
+
+        document.addEventListener('DOMContentLoaded', () => showSlide(currentIndex));
+    </script>
+</body>
+</html>

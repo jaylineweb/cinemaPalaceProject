@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../main/css/main.css">
+    <link href="./css/events.css" rel="stylesheet">
+    <title>이벤트 페이지</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+  </head>
+  <body>
+    <!-- 헤더  -->
+    <header id="header">
+        <div class="wrap clearfix">
+            <h1 class="logo">
+                <a href="../index.html"><img src="../main/img/logo.png" alt="CINEMA PALACE 로고 이미지"></a>
+            </h1>
+            <button class="mobile_btn">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
+            <div class="gnb_wrap">
+                <div class="gnb">
+                    <ul class="clearfix">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../movies/view1.html">Movies</a></li>
+                        <li><a href="../Theater/index.html">Theaters</a></li>
+                        <li><a href="../event/index.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="buttonArea">
+                    <a href="../login/login.html">Login</a>
+                    <a href="../login/signup.html">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- 이벤트메뉴 -->
+    <div class="eventMenu w-1300">
+      <div class="eventMenuBox1">
+        <h5>진행 이벤트</h5>
+      </div>
+      <div class="eventMenuBox2">
+        <a href="#">당첨자발표</a>
+        <span>|</span>
+        <a href="#">응모내역</a>
+        <span>|</span>
+        <a href="#">지난이벤트</a>
+      </div>
+    </div>
+    <!-- 캐러셀 -->
+    <div class="carouselWrapper">
+      <div id="carouselExampleAutoplaying" class="carousel slide w-1300 h-400" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2300">
+            <img src="./images/eventbanner1.jpg" class="d-block w-100 h-400" alt="..."/>
+          </div>
+          <div class="carousel-item h-400" data-bs-interval="2300">
+            <img src="./images/eventbanner2.jpg" class="d-block w-100 h-400" alt="..."/>
+          </div>
+          <div class="carousel-item h-400" data-bs-interval="2300">
+            <img src="./images/eventbanner3.jpg" class="d-block w-100 h-400" alt="..."/>
+          </div>
+          <div class="carousel-item h-400" data-bs-interval="2300">
+            <img src="./images/eventbanner4.jpg" class="d-block w-100 h-400" alt="..."/>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev carouselBtnStyle" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next carouselBtnStyle" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 문구추가 -->
+
+    <!-- 상품리스트(그리드) -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events11.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">[나쁜녀석들] SX 포스터</p>
+              <span class="card-text2">2024.05.29~2024.06.12 . <span class="redPoint">D-7</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events12.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">[존 오브 인터레스트] 필름마크</p>
+              <span class="card-text2">2024.05.31~2024.06.10 .
+                <span class="redPoint">종료임박</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events13.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">[원더랜드] TTT</p>
+              <span class="card-text2">2024.05.31~2024.06.10 .
+                <span class="redPoint">종료임박</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events21.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">[나쁜녀석들] IMAX 포스터</p>
+              <span class="card-text2">2024.05.29~2024.06.12 . <span class="redPoint">D-7</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events22.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                달콤 닭강정에 크런치 토핑! 콘크런치 닭강정 출시
+              </p>
+              <span class="card-text2">2024.05.31~2024.06.30</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events23.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">신형만의 회상 피규어 3차 출시!</p>
+              <span class="card-text2">2024.05.31~2024.06.30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events31.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">[하이큐!!쓰레기장의 결전] 디깅타임</p>
+              <span class="card-text2">2024.05.31~2024.06.30</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events32.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">카쇼라 <명탐정코난> 전용관람권</p>
+              <span class="card-text2">2024.05.31~2024.06.30 . <span class="redPoint">D-7</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-mb-4 col-sm-12">
+          <div class="card">
+            <div class="card-head">
+              <img src="./images/events35.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">찾아라 무비 클로버</p>
+              <span class="card-text2">2024.05.31~2024.06.30 . <span class="redPoint">D-7</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="moveTopwrapper">
+      <a href="#" class="movetop">위로이동</a>
+    </div>
+
+    <!-- <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+    <div class="box box4">박스4</div> -->
+    <footer id="footer">
+      <div class="copyright">©CINEMA PALACE All rights reserved</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+        let topBtn = document.querySelector(".movetop");
+        let elementPosition = topBtn.offsetTop;
+        if (window.scrollY > 1300.25) {
+          topBtn.style.position = "absolute";
+        } else if (window.scrollY <= 1300.25) {
+          topBtn.style.position = "fixed";
+        }
+      });
+    </script>
+  </body>
+</html>

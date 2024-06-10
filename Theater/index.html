@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Theater 페이지</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrap clearfix">
+            <h1 class="logo">
+                <a href="../index.html"><img src="../main/img/logo.png" alt="CINEMA PALACE 로고 이미지"></a>
+            </h1>
+            <button class="mobile_btn">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
+            <div class="gnb_wrap">
+                <div class="gnb">
+                    <ul class="clearfix">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../movies/view1.html">Movies</a></li>
+                        <li><a href="./index.html">Theaters</a></li>
+                        <li><a href="../event/index.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="buttonArea">
+                    <a href="../login/login.html">Login</a>
+                    <a href="../login/signup.html">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- 영화관 사진 -->
+    <div class="container pt-4 theaterImg">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.palacecinemas.com.au/gcs//stateless-www-palacecinemas-co/2020/03/1bbc5e74-pentridgecinema1100x700-1100x700.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.palacecinemas.com.au/gcs//stateless-www-palacecinemas-co/2020/03/f8f41db6-pentridgefoyer1100x700-1100x700.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.palacecinemas.com.au/gcs//stateless-www-palacecinemas-co/2020/03/659364a7-pentridgehallway1100x700-1100x700.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <!-- //carouselExampleSlidesOnly -->
+    </div>
+    <!-- //container -->
+
+    <!-- 상영 시간표 -->
+    <div class="timetable container text-center">
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">movie palace강남</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="영화관별/강남.html">movie palace강남</a></li>
+                        <li>
+                            <a class="dropdown-item" href="영화관별/건대입구.html">movie palace건대입구</a>
+                        </li>
+                        <li><a class="dropdown-item" href="영화관별/수유.html">movie palace수유</a></li>
+                        <li><a class="dropdown-item" href="영화관별/용산.html">movie palace용산</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table1">6월9일 일</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table2">6월10일 월</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table3">6월11일 화</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table4">6월12일 수</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table5">6월13일 목</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table6">6월14일 금</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link table-link" href="#n" data-id="table7">6월15일 토</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 시간표 -->
+        <!-- table1  -->
+        <div class="table-container" id="table1">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <strong>23:20</strong>
+                                <span>121석</span>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+
+        <!-- table2 -->
+        <div class="table-container" id="table2">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <strong>23:20</strong>
+                                <span>121석</span>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+
+        <!-- table3 -->
+        <div class="table-container" id="table3">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:20</strong>
+                                    <span>121석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+
+        <!-- table4 -->
+        <div class="table-container" id="table4">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:20</strong>
+                                    <span>121석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+
+        <!-- table5 -->
+        <div class="table-container" id="table5">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:20</strong>
+                                    <span>121석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+        <!-- table6 -->
+        <div class="table-container" id="table6">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:20</strong>
+                                    <span>121석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+        <!-- table7 -->
+        <div class="table-container" id="table7">
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>범죄도시4</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션, 범죄/ 109분/ 2024.04.24 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">1관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>09:00</strong>
+                                    <span>150석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>19:45</strong>
+                                    <span>148석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>퓨리오사-매드맥스 사가</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">액션/ 148분/ 2024.05.22 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">2관</span>
+                                    <span class="movieSeat">총158좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:30</strong>
+                                    <span>137석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:30</strong>
+                                    <span>120석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute top-5 px-1">
+                                <span class="title"><strong>설계자</strong></span>
+                                <span class="showing">상영중</span>
+                                <span class="movieGenre">범죄, 드라마/ 99분/ 2024.05.29 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">6관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //movie -->
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li>
+                                <a href="#n">
+                                    <strong>20:00</strong>
+                                    <span>93석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>21:40</strong>
+                                    <span>109석</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:20</strong>
+                                    <span>121석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="container text-start">
+                <div>
+                    <div class="movie pb-4 pt-5">
+                        <ul class="ms-4">
+                            <li>
+                                <img src="https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png" width="23px" height="23px" alt="" />
+                            </li>
+                            <li class="position-absolute px-1">
+                                <span class="title"><strong>원더랜드</strong></span>
+                                <span class="showing" g>상영중</span>
+                                <span class="movieGenre">드라마/ 113분/ 2024.06.05 개봉</span>
+                                <div>
+                                    <span class="movieInfo">2d</span>
+                                    <span class="movieInfo">4관</span>
+                                    <span class="movieSeat">총124좌석</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <div class="time pb-5">
+                        <ul class="ms-4">
+                            <li class="soldout">
+                                <a href="#n">
+                                    <strong>19:10</strong>
+                                    <span>마감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong>23:45</strong>
+                                    <span>87석</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //ms-4 -->
+                    </div>
+                    <!-- //time -->
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('.table-link').click(function(e) {
+                    e.preventDefault(); // 링크의 기본 동작을 취소
+                    var tableId = $(this).attr('data-id'); // 클릭한 링크의 data-id 속성값을 가져옴
+                    $('.table-container').hide(); // 모든 표를 숨김
+                    $('#' + tableId).show(); // 클릭한 링크에 해당하는 표를 보여줌
+                });
+            });
+        </script>
+        <!-- 작은 좌석표 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+    <footer id="footer">
+        <div class="copyright">©CINEMA PALACE All rights reserved</div>
+    </footer>
+</body>
+</html>

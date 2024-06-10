@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+html {display:flex;height:100%;margin:0;justify-content:center;align-items:center;background-color:#15062c;}
+body {height:100%;margin:0;display:flex;justify-content:center;align-items:center;/* background-image:url('./image/back.jpg'); */background-size:cover; /* 배경 이미지가 body 전체를 커버하도록 설정 */background-position:center; /* 배경 이미지가 중앙에 위치하도록 설정 */background-attachment:fixed;color:black;}
+
+/*
+* login.html 적용
+*/
+/* 로그인 페이지 :전체 틀*/
+.signInBox {width:520px;height:auto;padding:20px 20px 45px 20px;/* border:2px solid black; */border-radius:15px;box-sizing:border-box; /* 전체 박스 크기를 맞추기 위해 추가 */box-shadow:0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);background-color:#ffffff;}
+
+/* 되돌아가기 버튼 :login,signup 공통 적용 */
+.backButton {display:inline-block;margin-top:0;padding:13px;border-radius:5px;color:#ffffff;background-color:#461c87;border:1px solid #461c87;text-align:center;cursor:pointer;border-radius:50%;}
+
+/* 회원가입 :login,signup 공통 적용*/
+.singUp {width:100%;margin-top:0;margin-bottom:15px;font-size:30px;font-weight:600;line-height:46px;text-align:center;}
+
+/* 이메일, 비밀번호 입력  :login,signup 공통 적용*/
+.checkBox {display:flex;display:-webkit-flex;-webkit-flex-direction:column;flex-direction:column;/* margin-bottom:50px; */}
+
+/*
+* 이메일, 비밀번호 입력란 :login,signup 공통 적용
+*/
+input[type="text"], input[type="email"], input[type="password"] {width: 100%;padding:18px 10px;margin:8px 0 17px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;background-color:rgba(255, 255, 255, 0.5);color:#000000;}
+
+/* 에러 :비밀번호는 최소 8자 이상이어야 합니다.*/
+.error {display:none;margin-top:5px;margin-bottom:5px;font-size:12px;color:red;}
+
+
+/*
+* signup.html 적용
+*/
+.loginBox { /* 전체 박스 크기를 맞추기 위해 추가 */}
+
+/* 기본 스타일 */
+.loginBox {width:520px;height:auto;padding:20px 20px 40px 20px;/* border:1px solid #000000; */border-radius:15px;box-shadow:0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);box-sizing:border-box; /* 전체 박스 크기를 맞추기 위해 추가 */background-color:#fff;}
+
+/*성 | 이름 입력*/
+.nameCheck {display:flex;-webkit-justify-content:space-between;-webkit-justify-content:space-between;justify-content:space-between;width:100%;}
+.inputGroup {display:flex;display:-webkit-flex;-webkit-flex-direction:column;flex-direction:column;width:48%;font-weight:bold;}
+
+/* 이메일 인증하기 버튼  :login,signup 공통 적용*/
+.loginFormCheck,.validateBtn{text-align:center;}
+.loginFormCheck button,.validateBtn button{width: 100%; /* 버튼 너비를 100%로 설정  -> 95%*/padding:20px 10px; /* 입력 박스와 동일한 패딩 값 */margin-top:10px;margin-right:auto;margin-left:auto;box-sizing:border-box; /* 패딩을 포함하여 전체 너비 계산 */border-radius:6px; /* 입력 박스와 동일한 테두리 반경 */border:none; /* 버튼 테두리 제거 */background-color:#250f47; /* 버튼 배경색 */font-size:16px;font-weight:bold;color:white; /* 버튼 글자색 */cursor:pointer; /* 마우스 오버 시 커서 변경 */transition:background-color 0.5s ease-in;}
+.loginFormCheck button:hover,.validateBtn button:hover{background-color:#140925; /* 버튼 호버 시 배경색 변경 */}
+
+/* 로그인 버튼 별도 색 지정 */
+.loginFormCheck [onclick="loginForm()"]{background-color:#140925;}
+.loginFormCheck [onclick="loginForm()"]:hover{background-color:#250f47;}
+
+/* 화면 너비가 768px 이하일 때 적용될 스타일 */
+@media (max-width:768px) {
+    .loginBox{width:calc(100vw * (520 / 768));/* 화면 너비에 따라 박스의 너비를 조정 */height:auto; /* 내용에 맞춰 높이가 조정되도록 변경 */padding:10px;/* 화면 크기가 작을 때는 패딩을 줄임 */}
+    
+    /*성 | 이름 입력*/
+    .nameCheck {display:block;width:100%;}
+    .inputGroup {display:block;width:100%;}
+    label[for="lastName"]{display:block;}
+}
+
+/* 화면 너비가 640px 이하일 때 적용될 스타일 */
+@media (max-width:640px) {
+    .loginBox{width:calc(100vw * (520 / 640));}
+    .loginFormCheck button,.validateBtn button{width:100%;}
+    
+    /*
+    * 이메일, 비밀번호 입력란 :login,signup 공통 적용
+    */
+    input[type="text"], input[type="email"], input[type="password"] {width:100%;margin:calc(100vw * (8 / 640)) 0 calc(100vw * (17 / 640));padding:calc(100vw * (18 / 640)) calc(100vw * (10 / 640));}
+}
+
+/* 화면 너비가 530px 이하일 때 적용될 스타일 */
+@media (max-width:530px) {
+    /* 로그인 페이지 :전체 틀*/
+    .signInBox {width:calc(100vw * (500 / 530));padding:calc(100vw * (20 / 530)) calc(100vw * (20 / 530)) calc(100vw * (45 / 530)) calc(100vw * (20 / 530));}
+    
+    /*
+    * 이메일, 비밀번호 입력란 :login,signup 공통 적용
+    */
+    input[type="text"], input[type="email"], input[type="password"] {margin:calc(100vw * (8 / 530)) 0 calc(100vw * (17 / 530));padding:calc(100vw * (18 / 530)) calc(100vw * (10 / 530));}
+}
+
+/* 화면 너비가 480px 이하일 때 적용될 스타일 */
+@media (max-width:480px) {
+    .loginBox {width:calc(100vw * (410 / 480)); /* 더 작은 화면에 맞게 너비를 늘림 */}
+    
+    /* 로그인 페이지 :전체 틀*/
+    .signInBox {width:calc(100vw * (500 / 480));padding:calc(100vw * (20 / 480)) calc(100vw * (20 / 480)) calc(100vw * (45 / 480)) calc(100vw * (20 / 480));}
+    
+    /*
+    * 이메일, 비밀번호 입력란 :login,signup 공통 적용
+    */
+    input[type="text"], input[type="email"], input[type="password"] {margin:calc(100vw * (8 / 480)) 0 calc(100vw * (17 / 480));padding: calc(100vw * (10 / 480)) calc(100vw * (10 / 480));}
+}
+
+/*
+* success.html 적용
+*/
+/* 성공 창 */
+.successBox{display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;align-items:center;width:400px;height:700px;padding:20px;box-shadow:0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);box-sizing:border-box;border:2px solid black;border-radius:15px;text-align:center; /* 텍스트 중앙 정렬 */}
+.successBox h1 {margin-top:-50px; /* 텍스트 사이 간격 */margin-bottom:10px;font-size:1.7em; /* 큰 글씨 */}
+.successBox img{margin-top:-20px; /* 이미지를 위로 조금 올림 */margin-bottom:20px; /* 텍스트와의 간격 조정 */}
+.successBox p {margin-top:0px;font-size:1em; /* 작은 글씨 */}
+
+.successButton{margin-top:20px; /* 위쪽 마진 (위 요소와의 간격) */padding:10px 20px; /* 버튼 내부 여백 */border:none; /* 테두리 제거 */border-radius:5px; /* 둥근 모서리 */background-color:#007bff; /* 배경 색상 */font-size:1em; /* 글꼴 크기 */color:white; /* 글자 색상 */cursor:pointer; /* 커서 모양 변경 */outline:none; /* 포커스 시 아웃라인 제거 */}
+.successButton:hover{background-color:#0056b3; /* 호버 시 배경 색상 변경 */}
+
+
+/*
+* startpage.html 적용
+*/
+/* 시작 페이지 */
+.startPageBox{display:flex;display:-webkit-flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;align-items:center;width:474px;height:auto;padding:20px;/* border:2px solid black; */border-radius:4px;background-color:#fff;box-sizing:border-box;box-shadow:0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);text-align:center; /* 텍스트 중앙 정렬 */}
+.startPageBox h1{margin-top:20px; /* 텍스트 사이 간격 */margin-bottom:10px;font-size:1.1em; /* 큰 글씨 */font-weight:500;}
+.startPageBox p{margin-top:0px;font-size:1.4em; /* 작은 글씨 */font-weight:600;}
+
+/* 슬라이드 이미지 */
+.slider{overflow:hidden;position:relative;width:94%;height:auto; /* 슬라이더 높이 조정 */margin-top:0;margin-bottom:0;border-radius:20px; /* 둥근 테두리 적용 */background-color:#000; /* 필요에 따라 배경색 설정 */}
+.slides img{object-fit:contain; /* 이미지가 슬라이더 크기에 맞춰 조정되도록 설정 */width:100%;height:100%;border-radius:inherit; /* 부모의 border-radius 상속 */}
+
+/*입장하기 버튼*/
+.joinButton{padding:10px 20px; /* 버튼 내부 여백 */margin-top:21px; /* 위쪽 마진 (위 요소와의 간격) */margin-bottom:20px;border:none; /* 테두리 제거 */border-radius:15px; /* 둥근 모서리 */background-color:#007bff; /* 배경 색상 */font-size:1em; /* 글꼴 크기 */color:white; /* 글자 색상 */cursor:pointer; /* 커서 모양 변경 */outline:none; /* 포커스 시 아웃라인 제거 */}
+.joinButton:hover{background-color:#0056b3; /* 호버 시 배경 색상 변경 */}

@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+@import url(../../main/css/style.css); /*main 폴더에 있는 css > style.css 반영*/
+@import url(./style.css); /*events에 반영되어 있는 css*/

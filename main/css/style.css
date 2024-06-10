@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{margin:0;padding:0;}
+html,body{height:100%;}
+body{margin:0;padding:0;font-size:16px;font-family:'Noto Sans KR',sans-serif;}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}
+audio,canvas,progress,video{display:inline-block}
+article,aside,audio,blockquote,body,canvas,caption,dd,details,div,dl,dt,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,iframe,legend,li,main,menu,nav,ol,p,pre,section,summary,table,tbody,td,template,textarea,tfoot,th,thead,tr,ul,video{margin:0;padding:0;border:0;font-size:inherit;font-family:inherit;box-sizing:border-box;word-break:break-all}
+a,em,span{display:inline-block;margin:0;padding:0;box-sizing:border-box}
+b,strong{font-weight:600;}
+address,cite,dfn,em,i{font-style:normal;}
+img{border:none;vertical-align:middle;}
+a:link,a:visited{text-decoration:none;/*color:#000000;*/}
+li{list-style-type:none;}
+img{max-width:100%;max-height:100%;}
+.clearfix{display:block}
+.clearfix:after{content:"";display:table;clear:both}
+
+::before,::after{display:none;content:'';}
+
